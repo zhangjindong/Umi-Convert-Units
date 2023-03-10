@@ -1,14 +1,21 @@
 {
-  "name": "@umi/plugin-convert-units",
+  "name": "@zhangjindong/plugin-convert-units",
   "author": "zhangjindong <monkey8d8jin@gmail.com>",
-  "version": "0.0.1",
+  "description": "一个Umi V4的插件，实现单位转换和小数点控制",
+  "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "types": "dist/cjs/index.d.ts",
   "scripts": {
     "dev": "father dev",
-    "build": "father build"
+    "build": "father build",
+    "publish": "npm publish --access public"
   },
-  "keywords": [],
+  "keywords": [
+    "Umi",
+    "plugin",
+    "convert unit",
+    "typescript"
+  ],
   "authors": {
     "name": "zhangjindong <monkey8d8jin@gmail.com>",
     "email": "monkey8d8jin@gmail.com"
@@ -25,5 +32,9 @@
   },
   "dependencies": {
     "convert-units": "^3.0.0-beta.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zhangjindong/Umi-Convert-Units.git"
   }
 }
