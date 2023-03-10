@@ -16,6 +16,11 @@ export default (api: IApi) => {
   api.addOnDemandDeps(() => [{ name: "convert-units", version: "^3.0.0-beta.5" }]);
 
   api.onGenerateFiles(async () => {
+     api.writeTmpFile({
+      path: "speed.ts",
+      tplPath: join(__dirname, "./core/speed.tpl"),
+      context:{},
+    });
     api.writeTmpFile({
       path: "index.ts",
       tplPath: join(__dirname, "./core/convert.tpl"),
